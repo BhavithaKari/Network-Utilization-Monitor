@@ -61,6 +61,7 @@ sudo apt update
 sudo apt install git
 sudo apt install mininet
 ```
+<img width="729" height="344" alt="1" src="https://github.com/user-attachments/assets/392bca4e-6048-4332-b079-c009ffe2b101" />
 
 **Verify Mininet:**
 ```bash
@@ -77,6 +78,8 @@ git clone https://github.com/noxrepo/pox
 cd pox
 ./pox.py
 ```
+![Uploading image.png…]()
+
 
 > If you see `POX is up.` → POX is working ✔  
 > Press `Ctrl + C` to stop.
