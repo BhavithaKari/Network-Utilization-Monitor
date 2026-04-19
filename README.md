@@ -161,6 +161,8 @@ Ctrl + C
 ```
 <img width="814" height="277" alt="image" src="https://github.com/user-attachments/assets/0fa5a831-d52f-41f5-a5fd-b37f2641e438" />
 
+---
+
 <img width="283" height="34" alt="image" src="https://github.com/user-attachments/assets/364e7cbe-7fe0-439b-8cc0-c5940eb317b2" />
 
 ---
