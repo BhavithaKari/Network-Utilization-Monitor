@@ -61,15 +61,15 @@ sudo apt update
 sudo apt install git
 sudo apt install mininet
 ```
-<img width="729" height="344" alt="1" src="https://github.com/user-attachments/assets/392bca4e-6048-4332-b079-c009ffe2b101" />
+<img width="502" height="411" alt="image" src="https://github.com/user-attachments/assets/cd204632-44e6-4a2d-88d3-c9f1cfea48f5" />
 
 **Verify Mininet:**
 ```bash
 sudo mn --test pingall
 ```
 > If hosts ping each other → Mininet is working ✔
-
 ---
+<img width="316" height="364" alt="image" src="https://github.com/user-attachments/assets/ad286aee-ef46-48c3-9681-8a4b6a303a82" />
 
 ### ✅ Step 2 — Download POX Controller
 
@@ -78,9 +78,6 @@ git clone https://github.com/noxrepo/pox
 cd pox
 ./pox.py
 ```
-![Uploading image.png…]()
-
-
 > If you see `POX is up.` → POX is working ✔  
 > Press `Ctrl + C` to stop.
 
@@ -92,6 +89,8 @@ cd pox
 cd ~/pox/pox
 nano network_monitor.py
 ```
+<img width="263" height="26" alt="image" src="https://github.com/user-attachments/assets/6265d345-e9e9-4a82-983e-a13a0ea425de" />
+
 ---
 
 ### ✅ Step 4 — Run the POX Controller
@@ -105,6 +104,7 @@ cd ~/pox
 ```
 Network Utilization Monitor Started
 ```
+<img width="469" height="278" alt="image" src="https://github.com/user-attachments/assets/1cd21b90-57b8-4586-b85e-2b0232ea2099" />
 
 > Leave this terminal open.
 
@@ -113,7 +113,7 @@ Network Utilization Monitor Started
 ### ✅ Step 5 — Start Mininet (New Terminal)
 
 ```bash
-sudo mn --topo linear,2 --controller remote,ip=127.0.0.1,port=6633
+sudo mn --topo linear,2 --controller remote
 ```
 
 **Expected output:**
@@ -121,6 +121,7 @@ sudo mn --topo linear,2 --controller remote,ip=127.0.0.1,port=6633
 *** Starting CLI:
 mininet>
 ```
+<img width="345" height="199" alt="image" src="https://github.com/user-attachments/assets/f3547352-5892-410b-8aaf-d8f9984b554f" />
 
 ---
 
@@ -130,16 +131,19 @@ mininet>
 ```
 mininet> pingall
 ```
+<img width="215" height="56" alt="image" src="https://github.com/user-attachments/assets/af53e00e-9aac-4b99-88f5-bec413a5f7b5" />
 
 **High traffic test:**
 ```
 mininet> iperf h1 h2
 ```
+<img width="269" height="26" alt="image" src="https://github.com/user-attachments/assets/e98e2b63-8e22-4846-9065-4fb3e8c5f6ad" />
 
 **Example output in POX terminal:**
 ```
 Switch 00-00-00-00-00-01 | Port 1 | 8.45 Mbps | Utilization: 84.5%
 ```
+<img width="479" height="201" alt="image" src="https://github.com/user-attachments/assets/fb9bf30d-8af4-4b1a-aa86-d2de72e9c636" />
 
 ---
 
@@ -155,6 +159,9 @@ sudo mn -c
 # Stop POX:
 Ctrl + C
 ```
+<img width="814" height="277" alt="image" src="https://github.com/user-attachments/assets/0fa5a831-d52f-41f5-a5fd-b37f2641e438" />
+
+<img width="283" height="34" alt="image" src="https://github.com/user-attachments/assets/364e7cbe-7fe0-439b-8cc0-c5940eb317b2" />
 
 ---
 
