@@ -1,6 +1,6 @@
-# 📡 SDN Network Utilization Monitor (POX + Mininet)
+# SDN Network Utilization Monitor (POX + Mininet)
 
-## 📌 Project Description
+## Project Description
 
 This project implements a **Software Defined Networking (SDN)** based **Network Utilization Monitor** using the **POX controller** and **Mininet** network emulator.
 
@@ -8,17 +8,17 @@ The controller periodically collects OpenFlow port statistics from switches, est
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
-- 📊 Collects byte counters from OpenFlow switches
-- 📶 Estimates bandwidth usage (Mbps)
-- 📈 Calculates link utilization (%)
-- ⏱️ Updates statistics every **2 seconds**
-- 🔁 Works with **linear Mininet topology**
+- Collects byte counters from OpenFlow switches
+- Estimates bandwidth usage (Mbps)
+- Calculates link utilization (%)
+- Updates statistics every **2 seconds**
+- Works with **linear Mininet topology**
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 Mininet Topology:
@@ -40,7 +40,7 @@ Mininet Topology:
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 | Technology       | Purpose                        |
 |------------------|--------------------------------|
@@ -52,9 +52,9 @@ Mininet Topology:
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
-### ✅ Step 1 — Install Required Tools
+### Step 1 — Install Required Tools
 
 ```bash
 sudo apt update
@@ -71,7 +71,7 @@ sudo mn --test pingall
 ---
 <img width="316" height="364" alt="image" src="https://github.com/user-attachments/assets/ad286aee-ef46-48c3-9681-8a4b6a303a82" />
 
-### ✅ Step 2 — Download POX Controller
+### Step 2 — Download POX Controller
 
 ```bash
 git clone https://github.com/noxrepo/pox
@@ -83,7 +83,7 @@ cd pox
 
 ---
 
-### ✅ Step 3 — Create the Network Monitor Module
+### Step 3 — Create the Network Monitor Module
 
 ```bash
 cd ~/pox/pox
@@ -93,7 +93,7 @@ nano network_monitor.py
 
 ---
 
-### ✅ Step 4 — Run the POX Controller
+### Step 4 — Run the POX Controller
 
 ```bash
 cd ~/pox
@@ -110,7 +110,7 @@ Network Utilization Monitor Started
 
 ---
 
-### ✅ Step 5 — Start Mininet (New Terminal)
+### Step 5 — Start Mininet (New Terminal)
 
 ```bash
 sudo mn --topo linear,2 --controller remote
@@ -125,7 +125,7 @@ mininet>
 
 ---
 
-### ✅ Step 6 — Generate Traffic
+### Step 6 — Generate Traffic
 
 **Small traffic test (inside Mininet CLI):**
 ```
@@ -147,7 +147,7 @@ Switch 00-00-00-00-00-01 | Port 1 | 8.45 Mbps | Utilization: 84.5%
 
 ---
 
-### ✅ Step 7 — Stop Everything Properly
+### Step 7 — Stop Everything Properly
 
 ```bash
 # In Mininet:
@@ -167,7 +167,7 @@ Ctrl + C
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ```
 1. POX registers a listener for switch connections (ConnectionUp)
@@ -183,7 +183,7 @@ Ctrl + C
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pox/
@@ -193,7 +193,7 @@ pox/
 
 ---
 
-## 🎓 Concepts Demonstrated
+## Concepts Demonstrated
 
 | Concept                   | Implementation                          |
 |---------------------------|-----------------------------------------|
