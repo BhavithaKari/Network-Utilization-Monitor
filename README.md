@@ -86,7 +86,7 @@ cd pox
 ### Step 3 — Create the Network Monitor Module
 
 ```bash
-cd ~/pox/pox
+cd pox
 nano network_monitor.py
 ```
 <img width="263" height="26" alt="image" src="https://github.com/user-attachments/assets/6265d345-e9e9-4a82-983e-a13a0ea425de" />
@@ -187,8 +187,7 @@ Ctrl + C
 
 ```
 pox/
-└── pox/
-    └── network_monitor.py   ← Our custom SDN monitoring module
+└── network_monitor.py   ← Our custom SDN monitoring module
 ```
 
 ---
